@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PT-FASTJSON/PT-FASTJSON.iml" filepath="$PROJECT_DIR$/PT-FASTJSON/PT-FASTJSON.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PT-HttpClient/PT-HttpClient.iml" filepath="$PROJECT_DIR$/PT-HttpClient/PT-HttpClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PT-Swagger/PT-Swagger.iml" filepath="$PROJECT_DIR$/PT-Swagger/PT-Swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PT-learn.iml" filepath="$PROJECT_DIR$/PT-learn.iml" />
+    </modules>
+  </component>
+</project>

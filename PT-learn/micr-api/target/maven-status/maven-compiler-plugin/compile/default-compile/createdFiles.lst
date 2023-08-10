@@ -1,0 +1,10 @@
+com\bjpowernode\pojo\MultiProduct.class
+com\bjpowernode\model\FinanceAccount.class
+com\bjpowernode\model\User.class
+com\bjpowernode\service\ProductInfoService.class
+com\bjpowernode\model\RechargeRecord.class
+com\bjpowernode\service\PlatBaseInfoService.class
+com\bjpowernode\model\BidInfo.class
+com\bjpowernode\model\IncomeRecord.class
+com\bjpowernode\model\LoanInfo.class
+com\bjpowernode\pojo\BaseInfo.class

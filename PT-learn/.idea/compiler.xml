@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="PT-Swagger" />
+        <module name="PT-FASTJSON" />
+        <module name="PT-HttpClient" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="PT-FASTJSON" target="17" />
+      <module name="PT-HttpClient" target="17" />
+      <module name="PT-Swagger" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="PT-FASTJSON" options="-parameters" />
+      <module name="PT-HttpClient" options="-parameters" />
+      <module name="PT-Swagger" options="-parameters" />
+    </option>
+  </component>
+</project>
