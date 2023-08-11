@@ -19,5 +19,5 @@ public interface SmsService {
      * @param code  提交参数中的验证码
      * @return
      */
-    //boolean checkSmsCode(String phone,String code);
+    boolean checkSmsCode(String phone,String code);
 }

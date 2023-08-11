@@ -94,7 +94,7 @@ public class SmsCodeRegisterImpl implements SmsService {
         return send;
     }
 
-    /*@Override
+    @Override
     public boolean checkSmsCode(String phone, String code) {
         String key = RedisKey.KEY_SMS_CODE_REG + phone;
         if( stringRedisTemplate.hasKey(key)){
@@ -104,7 +104,5 @@ public class SmsCodeRegisterImpl implements SmsService {
             }
         }
         return false;
-    }*/
-
-
+    }
 }
