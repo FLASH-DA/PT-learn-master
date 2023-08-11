@@ -12,4 +12,7 @@ public interface UserService {
      * 根据手机号来查询数据
      */
     User queryByPhone(String phone);
+
+    /*用户注册*/
+    int userRegister(String phone, String password);
 }

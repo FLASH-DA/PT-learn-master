@@ -26,3 +26,7 @@ dubbo:
 #  protocol:
 #    port: 20880
 
+#密码的盐
+ylb:
+  config:
+    password-salt: fiwsyhrf9wejroi2huio3y4234operw3

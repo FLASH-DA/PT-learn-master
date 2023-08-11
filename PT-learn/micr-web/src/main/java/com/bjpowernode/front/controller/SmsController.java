@@ -33,11 +33,18 @@ public class SmsController extends BaseController{
     public RespResult sendCodeRegister(@RequestParam String phone){
         RespResult result = RespResult.fail();
         if(CommonUtils.checkphone(phone)){
-            boolean sendSmsYes = smsService.sendSms(phone);
-            if (sendSmsYes) {
+            //判断redis中是否有这个手机号的验证码
+            String key  = RedisKey.KEY_SMS_CODE_REG + phone;
+            if(stringRedisTemplate.hasKey(key)){
                 result = RespResult.ok();
+                result.setRCode(RCode.SMS_CODE_CAN_USE);
+            } else {
+                boolean isSuccess = smsService.sendSms(phone);
+                if( isSuccess ){
+                    result = RespResult.ok();
+                }
             }
-        }else {
+        } else {
             result.setRCode(RCode.PHONE_FORMAT_ERR);
         }
         return result;

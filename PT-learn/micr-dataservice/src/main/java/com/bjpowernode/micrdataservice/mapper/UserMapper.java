@@ -26,4 +26,8 @@ public interface UserMapper {
      * @return
      */
     User selectByPhone(@Param("phone") String phone);
+
+    void insertReturnPrimaryKey(User user);
+    /*登录*/
+    User selectLogin(@Param("phone") String phone, @Param("loginPassword") String newPassword);
 }
