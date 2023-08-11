@@ -31,5 +31,8 @@ dubbo:
 jdwx:
   sms:
     url: https://way.jd.com/chuangxin/dxjk
-    content: 【csd发的短信】 你的验证码： %s ,3分钟内有效，请勿泄露给他人
+    appkey: 3680fa919b771148da626bbcbd459475
+    content: 【大富科技】你的验证码是：%s，3分钟内有效，请勿泄露给他人
+    login-text: 【大富科技】登录验证码是：%s，3分钟内有效，请勿泄露给他人
+
 

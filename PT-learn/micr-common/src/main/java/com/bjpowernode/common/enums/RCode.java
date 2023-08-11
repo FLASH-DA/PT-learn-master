@@ -13,6 +13,8 @@ public enum RCode {
     PRODUCT_OFFLINE(1003,"产品已经下线"),
     PHONE_FORMAT_ERR(1004,"手机号格式不正确"),
     PHONE_EXISTS(1005,"手机号已经注册过"),
+    SMS_CODE_CAN_USE(1006,"验证码可以继续使用"),
+    SMS_CODE_INVALID(1007,"验证码无效"),
 
     ;
     RCode(int c, String t){

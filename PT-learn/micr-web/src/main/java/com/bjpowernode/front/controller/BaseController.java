@@ -3,7 +3,7 @@ package com.bjpowernode.front.controller;
 import com.bjpowernode.service.PlatBaseInfoService;
 import com.bjpowernode.service.ProductInfoService;
 import com.bjpowernode.service.InvestService;
-import com.bjpowernode.service.SmsService;
+import com.bjpowernode.front.service.SmsService;
 import com.bjpowernode.service.UserService;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -20,15 +20,16 @@ public class BaseController {
 
     @DubboReference(interfaceClass = PlatBaseInfoService.class, version = "1.0")
     protected PlatBaseInfoService platBaseInfoService;
+
     @DubboReference(interfaceClass = ProductInfoService.class, version = "1.0")
     protected ProductInfoService productInfoService;
+
     //投资服务
     @DubboReference(interfaceClass = InvestService.class,version = "1.0")
     protected InvestService investService;
+
     @DubboReference(interfaceClass = UserService.class,version = "1.0")
     protected  UserService userService;
-    @DubboReference(interfaceClass = SmsService.class,version = "1.0")
-    protected SmsService smsService;
 
     @Resource
     protected StringRedisTemplate stringRedisTemplate;
