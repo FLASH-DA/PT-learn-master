@@ -27,5 +27,9 @@ dubbo:
     check: false
     timeout: 50000
     retries: 0
-
+#短信的配置
+jdwx:
+  sms:
+    url: https://way.jd.com/chuangxin/dxjk
+    content: 【csd发的短信】 你的验证码： %s ,3分钟内有效，请勿泄露给他人
 
