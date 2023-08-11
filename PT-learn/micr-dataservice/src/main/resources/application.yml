@@ -14,17 +14,15 @@ mybatis:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     map-underscore-to-camel-case: true #????
 
-#dubbo?????
+#Dubbo配置
 dubbo:
   registry:
     address: zookeeper://localhost:2181
   scan:
-    base-packages: com.bjpowernode.micrdataservice.service
+    base-packages: com.bjpowernode.dataservice.service
   provider:
     timeout: 50000
     retries: 0
-#  protocol:
-#    port: 20880
 
 #密码的盐
 ylb:
